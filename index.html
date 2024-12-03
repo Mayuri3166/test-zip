@@ -7,14 +7,14 @@
 </head>
 <body>
   <h1>Welcome to Auto Download Page</h1>
-  <p>Your download should start automatically. If not, <a id="download-link" href="file.pdf" download>click here</a> to download manually.</p>
+  <p>Your download should start automatically. If not, <a id="download-link" href="file.zip" download>click here</a> to download manually.</p>
 
   <script>
     // Automatically trigger download when the page loads
     window.onload = () => {
       const downloadLink = document.createElement('a');
-      downloadLink.href = 'file.pdf'; // Path to the file
-      downloadLink.download = 'file.pdf'; // Suggested file name
+      downloadLink.href = 'file.zip'; // Path to the file
+      downloadLink.download = 'file.zip'; // Suggested file name
       document.body.appendChild(downloadLink); // Append to body
       downloadLink.click(); // Simulate a click to start the download
       document.body.removeChild(downloadLink); // Remove the element
